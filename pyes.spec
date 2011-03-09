@@ -42,7 +42,8 @@ rm -rf %{buildroot}
 %doc THANKS
 %doc Changelog
 %doc TODO
-%{python_sitelib}/%{name}/*
+%dir %{python_sitelib}/%{name}
+%{python_sitelib}/%{name}*
 
 %changelog
 * Mon Mar  7 2011 Tavis Aitken <tavisto@tavisto.net> - 0.14.1-1
